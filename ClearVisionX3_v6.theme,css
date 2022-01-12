@@ -1,0 +1,224 @@
+/* //META {"name": "ClearVisionX3", "description": "Public BETA for ClearVision v6.", "author": "Zerthox, Transparency by Xemious", "version": "6 BETA", "website": "https://clearvision.gitlab.io"} *//**/
+/* "ClearVision v6 BETA" by Zerthox */
+
+/* IMPORT CSS */
+@import url(https://leafyluigi.github.io/CVv6-CustomCSS/Custom-CSS.css);
+@import url(https://clearvision.gitlab.io/v6/main.css);
+@import url(https://leafyluigi.github.io/CVv6-CustomCSS/Custom-CSS.css);
+@import url(https://zerthox.github.io/ClearVision/mods/SmoothBackgrounds.css); /*Smoother backgrounds*/
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css"); /*Horizontal Serverlist on top*/
+@import url("https://discordstyles.github.io/Addons/bottomhsl.css"); /*Horizontal Serverlist on bottom*/
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
+/*@import url(https://codedotspectra.github.io/themes/core/settings-icons.css);*/
+/*@import url(https://rawgit.com/jakeoid/discord-emoji-anim/master/stylesheet.css); Emoji Animations*/
+
+/*WATERMARKS*/
+/*Remove titlebar watermark*/
+.typeWindows-2-g3UY > .wordmark-2u86JB:before {
+  content: "";
+}
+
+.typeWindows-2-g3UY > .wordmark-2u86JB:after {
+  content: "";
+}
+
+/*Small Watermark user box*/
+.container-YkUktl:before {
+	content: "";
+}
+.container-YkUktl:after {
+  content: "";
+}
+
+/* TRANSPARENT FIXES */
+/*Transparent Now Playing*/
+.nowPlayingColumn-1eCBCN {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.sidebar-2K8pFh {
+   background-color: rgba(0,0,0,0)!important;
+   }
+
+/*Empty Card color*/
+ .emptyCard-KDifrB{
+	background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid transparent; 
+}
+ 
+ /*Logo background*/
+.wrapper-3kah-n:hover .childWrapper-1j_1ub, .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub {
+    background-color: #00000000;
+    color: #fff;
+}
+ 
+/* Chatbox */
+.chatContent-3KubbW {
+    background: transparent !important;
+    border-radius: 5px;
+}
+/* Member list */
+.members-3WRCEx {
+    background: transparent !important;
+}
+/* Channel list */
+.sidebar-1tnWFu {
+    background: transparent !important;
+}
+/* Server name bar */
+.channels-Ie2l6A .header-2o-2hj {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+/* Title bar */
+.base-2jDfDU .container-ZMc96U {
+    height: 48px;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+/* Chat area */
+.chat-3bRxxu .content-yTz4x3>.spacer-1fA9zc {
+    background: transparent !important;
+}
+/* Search bar */
+.searchBar-6Kv8R2 {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+#app-mount .container-2McqkF {
+  background: rgba(43, 43, 43, 0.411);
+  backdrop-filter: blur(10px);
+}
+
+/*TitleBar*/
+.typeWindows-1za-n7 {
+    background-color: transparent;
+}
+
+/*titlebar shadow*/
+.typeWindows-2-g3UY {
+	background: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+}
+/*Friends*/
+.peopleColumn-1wMU14 {
+    background-color: transparent !important;
+}
+/*Banner Fading*/
+.userPopout-xaxa6l .popoutBanner-19WKGg, /*User image*/
+.userPopout-xaxa6l .popoutBannerPremium-1n96gg,
+.container-3w7J-x .bannerImage-3KhIJ6 /*Server banner*/
+{
+  -webkit-mask: none !important;
+  mask: none;
+}
+.bannerImage-3KhIJ6 {
+  width: var(--channels-width);
+  background-size: var(--channels-width);
+  background-position-y: top;
+}
+
+/* themes and plugins edit */
+.bd-addon-list .bd-addon-header {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.bd-addon-list .bd-addon-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* SETTINGS */
+:root {
+
+	/*RADIAL STATUS OPTIONS*/
+  	--rs-small-spacing: 2px;  /* spacing between avatar and status */
+  	--rs-large-spacing: 3px;  /* spacing between avatar and status for user popouts & modals/profiles */
+  	--rs-width: 2px;  /* Width/thickness of status border */
+  	--rs-avatar-shape: 50%;  /* 50% for round - 0% for square */
+  	--rs-online-color: #00ffb9;  /* color for online status */
+  	--rs-idle-color: #0081e7;  /* color for idle status */
+  	--rs-dnd-color: #e62740;  /* color for dnd status */
+  	--rs-offline-color: #ffffff;  /* color for offline status */
+  	--rs-streaming-color: #ff5900;  /* color for streaming status*/
+  	--rs-invisible-color: #ffffff;  /* color for invisible status - Note this will only show for your own invisibility */
+
+	/*HORIZONTAL SERVERLIST ICON SIZE*/
+  --HSL-server-icon-size: 40px;  /* Size of the server icons | DEFAULT: 40px*/
+  --HSL-server-spacing: 10px;  /* Spacing between each server icon | DEFAULT: 10px */
+
+	/* ACCENT COLORS */
+	--main-color: #7a0099; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+	--hover-color: #7a0099; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+	--success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
+	--danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+
+	/* STATUS COLORS */
+	--online-color: #00ffb9; /* online status color (hex, rgb or hsl) [default: #43b581]*/
+	--idle-color: #0081e7; /* idle status color (hex, rgb or hsl) [default: #faa61a]*/
+	--dnd-color: #e62740; /* dnd status color (hex, rgb or hsl) [default: #982929]*/
+	--streaming-color: #ff5900; /* streaming status color (hex, rgb or hsl) [default: #593695]*/
+	--offline-color: #ffffff; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+
+	/* GENERAL */
+	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
+	--members-width: 240px; /* member list width [default: 240px] */
+	--avatar-roundness: 50%; /* avatar roundness (0% for squares, 50% for circles) [default: 50%] */
+
+	/* APP BACKGROUND */
+	--background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
+	--background-image: url(https://i.imgur.com/B83lCdw.png); /* app background image (link must be HTTPS) [default:  url(https://clearvision.gitlab.io/images/sapphire.jpg)]
+	--background-position: center; /* app background position [default: center] */
+	--background-size: cover; /* app background size [default: cover] */
+	--background-brightness: 100%; /* app background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
+	--background-contrast: 100%; /* app background contrast [default: 100%] */
+	--background-saturation: 100%; /* app background saturation [default: 100%] */
+	--background-invert: 0%; /* app background invert (0 - 100%)  [default: 0%] */
+	--background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [default: 0%] */
+	--background-sepia: 0%; /* app background sepia (0 - 100%) [default: 0%] */
+	--background-blur: 0px; /* app background blur [default: 0px] */
+
+	/* USER POPOUT BACKGROUND */
+	--user-popout-image: url(https://i.imgur.com/B83lCdw.png); /* app background image (link must be HTTPS) https://i.imgur.com/20YbnYn.png [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
+	--user-popout-position: center; /* user popout background position [default: center] */
+	--user-popout-size: cover; /* user popout background size [default: cover] */
+	--user-popout-brightness: 100%; /* user popout background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
+	--user-popout-contrast: 100%; /* user popout background contrast [default: 100%] */
+	--user-popout-saturation: 100%; /* user popout background saturation [default: 100%] */
+	--user-popout-invert: 0%; /* user popout background invert (0 - 100%) [default: 0%] */
+	--user-popout-grayscale: 0%; /* user popout background grayscale (0 - 100%) [default: 0%] */
+	--user-popout-sepia: 0%; /* user popout background sepia (0 - 100%) [default: 0%] */
+	--user-popout-blur: 3px; /* user popout background blur [default: 3px] */
+
+	/* USER MODAL BACKGROUND */
+	--user-modal-image: url(https://i.imgur.com/B83lCdw.png);); /* app background image (link must be HTTPS) https://i.imgur.com/20YbnYn.png [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
+	--user-modal-position: center; /* user modal background position [default: center] */
+	--user-modal-size: cover; /* user modal background size [default: cover] */
+	--user-modal-brightness: 100%; /* user modal background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
+	--user-modal-contrast: 100%; /* user modal background contrast [default: 100%] */
+	--user-modal-saturation: 100%; /* user modal background saturation [default: 100%] */
+	--user-modal-invert: 0%; /* user modal background invert (0 - 100%) [default: 0%] */
+	--user-modal-grayscale: 0%; /* user modal background grayscale (0 - 100%) [default: 0%] */
+	--user-modal-sepia: 0%; /* user modal background sepia (0 - 100%) [default: 0%] */
+	--user-modal-blur: 3px; /* user modal background blur [default: 3px] */
+
+	/* HOME BUTTON ICON */
+	--home-icon: url(https://puu.sh/GkynD/964cf06b8e.svg); /* home button icon (link must be HTTPS) [default:  url(https://clearvision.gitlab.io/icons/discord.svg)]*/
+	--home-position: center; /* home button icon position [default: center] */
+	--home-size: 40px; /* home button icon size [default: 40px] */
+}
