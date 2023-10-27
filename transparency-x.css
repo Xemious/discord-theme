@@ -1,3 +1,4 @@
+:root {
 /* Solid banner */
 .banner-2boKnS {
     -webkit-mask: none;
@@ -150,4 +151,5 @@
     border-radius: 5px;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.3);
+}
 }
