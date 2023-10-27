@@ -1,10 +1,3 @@
-:root {
-/* Solid banner */
-.banner-2boKnS {
-    -webkit-mask: none;
-    mask: none;
-}
-
 /* WATERMARKS */
 /* Remove titlebar watermark */
 .typeWindows__5fa63>.wordmark__0d178:before {
@@ -151,5 +144,4 @@
     border-radius: 5px;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.3);
-}
 }
